@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAMPAGE — Компьютерный клуб #1 в Иссыке | 24/7</title>
+  <meta name="description" content="Киберспортивный компьютерный клуб Rampage в Иссыке. 55 мощных ПК, Общий зал (40 ПК) и VIP зал (15 ПК), круглосуточно 24/7. Топовое железо, ул. Алтын-адам 113/6.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  
+  <!-- Google Fonts: Orbitron & Rajdhani for Cyberpunk/Esports, Montserrat & Inter for UI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,600;0,700;1,700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Orbitron:wght@600;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Ambient Cyber Lighting & Background Grids -->
+  <div class="cyber-glow-orb orb-1"></div>
+  <div class="cyber-glow-orb orb-2"></div>
+  <div class="cyber-glow-orb orb-3"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container marquee-content">
+      <span><i class="fa-solid fa-bolt text-neon"></i> ЖДЁМ ВАС 24/7</span>
+      <span class="sep">•</span>
+      <span><i class="fa-solid fa-gamepad"></i> 55 ТОПОВЫХ ПК: 40 В ОБЩЕМ ЗАЛЕ + 15 В VIP</span>
+      <span class="sep">•</span>
+      <span><i class="fa-solid fa-location-dot text-neon"></i> Г. ИССЫК, УЛ. АЛТЫН-АДАМ 113/6</span>
+      <span class="sep">•</span>
+      <span><i class="fa-solid fa-fire text-neon"></i> ПИНГ 1-5 МС | CS2, DOTA 2, VALORANT, GTA V</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="logo-group">
+        <div class="logo-wrapper">
+          <img src="assets/logo.jpg" alt="Rampage Gaming Club Gorilla Logo" class="brand-logo">
+          <span class="logo-pulse"></span>
+        </div>
+        <div class="logo-text">
+          <span class="brand-title">RAMPAGE</span>
+          <span class="brand-tag">CYBER CLUB • ISSYK</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> Главная</a></li>
+          <li><a href="#about" class="nav-link"><i class="fa-solid fa-fire"></i> О клубе</a></li>
+          <li><a href="#zones" class="nav-link"><i class="fa-solid fa-desktop"></i> Зоны клуба</a></li>
+          <li><a href="#prices" class="nav-link"><i class="fa-solid fa-tag"></i> Прайс / Железо</a></li>
+          <li><a href="#contacts" class="nav-link"><i class="fa-solid fa-map-pin"></i> Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+77000000000" class="btn-call-header" title="Позвонить в клуб">
+          <i class="fa-solid fa-phone"></i>
+          <span class="call-text">Позвонить</span>
+        </a>
+        <button class="btn btn-primary btn-glow open-booking-btn" data-zone="Общий зал">
+          <i class="fa-solid fa-crosshairs"></i>
+          <span>Забронировать ПК</span>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>РАБОТАЕМ КРУГЛОСУТОЧНО • 24/7 • ИССЫК</span>
+        </div>
+        <h1 class="hero-title">
+          КОМПЬЮТЕРНЫЙ КЛУБ <span class="highlight-number">#1</span> В ИССЫКЕ — 
+          <span class="neon-text glow-orange">RAMPAGE</span>
+        </h1>
+        <p class="hero-subtitle">
+          Мощное железо, бескомпромиссная киберспортивная атмосфера, низкий пинг и заряд эмоций 24 часа в сутки, 7 дней в неделю.
+        </p>
+        
+        <div class="hero-buttons">
+          <button class="btn btn-primary btn-large btn-glow open-booking-btn" data-zone="Любой">
+            <i class="fa-solid fa-bolt"></i> Забронировать место
+          </button>
+          <a href="https://instagram.com/rampage_issyk" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-large">
+            <i class="fa-brands fa-instagram"></i> @rampage_issyk
+          </a>
+          <a href="tel:+77000000000" class="btn btn-outline btn-large">
+            <i class="fa-solid fa-phone-volume"></i> Позвонить
+          </a>
+        </div>
+
+        <!-- Quick Stats Grid -->
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="stat-data">
+              <span class="stat-val">24/7</span>
+              <span class="stat-label">Без выходных</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-desktop"></i></div>
+            <div class="stat-data">
+              <span class="stat-val">55 ПК</span>
+              <span class="stat-label">40 Общий + 15 VIP</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-gauge-high"></i></div>
+            <div class="stat-data">
+              <span class="stat-val">240+ Hz</span>
+              <span class="stat-label">Плавная картинка</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-wifi"></i></div>
+            <div class="stat-data">
+              <span class="stat-val">1-5 ms</span>
+              <span class="stat-label">Оптоволокно</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-logo-frame">
+          <div class="glow-ring"></div>
+          <div class="outer-rotating-border"></div>
+          <div class="logo-image-box">
+            <img src="assets/logo.jpg" alt="Rampage Mascot Gorilla Logo" class="hero-mascot">
+          </div>
+          <div class="floating-badge badge-top">
+            <i class="fa-solid fa-trophy"></i> Киберспорт в Иссыке
+          </div>
+          <div class="floating-badge badge-bottom">
+            <i class="fa-solid fa-shield-halved"></i> 100% Ультимативный FPS
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Features Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-fire"></i> ПОЧЕМУ RAMPAGE</span>
+        <h2 class="section-title">АТМОСФЕРА ДЛЯ ТВОИХ <span class="neon-text">ПОБЕД</span></h2>
+        <p class="section-desc">Мы создали пространство, где каждый геймер — от соло-игрока до целой киберспортивной команды — получает максимум комфорта и драйва.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h3>Топовое железо</h3>
+          <p>Современные видеокарты NVIDIA GeForce RTX, скоростные SSD NVMe и мощные процессоры. Никаких лагов и просадок FPS.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-headphones"></i>
+          </div>
+          <h3>Pro-девайсы</h3>
+          <p>Точные сенсоры киберспортивных мышек, механические клавиатуры с мгновенным откликом и наушники с позиционированием звука 7.1.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-chair"></i>
+          </div>
+          <h3>Комфорт & Эргономика</h3>
+          <p>Анатомические игровые кресла с поддержкой поясницы, широкие столы и мощная система вентиляции и кондиционирования.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fa-solid fa-burger"></i>
+          </div>
+          <h3>Бар и Снэки</h3>
+          <p>Холодные энергетики, освежающие лимонады, горячий кофе, снеки и сэндвичи прямо к твоему игровому месту без отрыва от катки.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gaming Zones Section -->
+  <section class="zones-section" id="zones">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-gamepad"></i> ИГРОВЫЕ ПРОСТРАНСТВА</span>
+        <h2 class="section-title">ВЫБЕРИ СВОЮ <span class="neon-text">ЗОНУ</span></h2>
+        <p class="section-desc">55 игровых станций, разделенных на два просторных комфортных формата под любые задачи.</p>
+      </div>
+
+      <div class="zones-grid">
+        <!-- Zone 1: General Hall -->
+        <div class="zone-card card-standard">
+          <div class="zone-header">
+            <div class="zone-badge">40 КОМПЬЮТЕРОВ</div>
+            <div class="zone-schedule"><i class="fa-solid fa-circle-check"></i> 24/7 Доступен</div>
+          </div>
+          <div class="zone-body">
+            <div class="zone-title-group">
+              <span class="zone-subtitle">Основное пространство</span>
+              <h3 class="zone-name">ОБЩИЙ ЗАЛ</h3>
+            </div>
+            <p class="zone-info">
+              40 мощных компьютеров для комфортной игры с друзьями, командных клатчей и ярких баталий в любимых играх. Отличная атмосфера и максимальный драйв!
+            </p>
+
+            <div class="zone-specs-list">
+              <div class="spec-item">
+                <i class="fa-solid fa-desktop"></i>
+                <span>Мониторы 165–240Hz Gaming IPS/VA</span>
+              </div>
+              <div class="spec-item">
+                <i class="fa-solid fa-microchip"></i>
+                <span>Видеокарты серии NVIDIA RTX</span>
+              </div>
+              <div class="spec-item">
+                <i class="fa-solid fa-keyboard"></i>
+                <span>Механические клавиатуры & геймерские мыши</span>
+              </div>
+              <div class="spec-item">
+                <i class="fa-solid fa-headphones"></i>
+                <span>Гарнитуры с шумоизоляцией и четким микрофоном</span>
+              </div>
+              <div class="spec-item">
+                <i class="fa-solid fa-users"></i>
+                <span>40 удобных посадочных мест для соло и команд</span>
+              </div>
+            </div>
+
+            <div class="zone-footer">
+              <div class="zone-price-preview">
+                <span class="price-from">от</span>
+                <span class="price-amount">600 ₸</span>
+                <span class="price-period">/ час</span>
+              </div>
+              <button class="btn btn-primary open-booking-btn" data-zone="Общий зал (40 ПК)">
+                <i class="fa-solid fa-check"></i> Выбрать Общий зал
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zone 2: VIP Hall -->
+        <div class="zone-card card-vip">
+          <div class="vip-ribbon"><i class="fa-solid fa-crown"></i> VIP PREMIUM</div>
+          <div class="zone-header">
+            <div class="zone-badge badge-vip">15 КОМПЬЮТЕРОВ</div>
+            <div class="zone-schedule"><i class="fa-solid fa-star"></i> Максимум уединения</div>
+          </div>
+          <div class="zone-body">
+            <div class="zone-title-group">
+              <span class="zone-subtitle">Приватное киберспортивное пространство</span>
+              <h3 class="zone-name text-gradient-orange">VIP ЗАЛ</h3>
+            </div>
+            <p class="zone-info">
+              15 компьютеров для максимальной производительности и уединения. Флагманское железо, увеличенное пространство стола, люксовые кресла и тишина для полной концентрации.
+            </p>
+
+            <div class="zone-specs-list">
+              <div class="spec-item">
+                <i class="fa-solid fa-crown text-neon"></i>
+                <span>Флагманские мониторы 240Hz–360Hz Ultra-Fast</span>
+              </div>
+              <div class="spec-item">
+                <i class="fa-solid fa-bolt text-neon"></i>
+                <span>Топовые видеокарты RTX Ti / Super серии</span>
+              </div>
+              <div class="spec-item">
+                <i class="fa-solid fa-chair text-neon"></i>
+                <span>Премиальные эргономичные кресла повышенного комфорта</span>
+              </div>
+              <div class="spec-item">
+                <i class="fa-solid fa-wand-magic-sparkles text-neon"></i>
+                <span>Pro киберспортивная периферия премиум-класса</span>
+              </div>
+              <div class="spec-item">
+                <i class="fa-solid fa-door-closed text-neon"></i>
+                <span>Отдельная шумоизолированная зона на 15 персон</span>
+              </div>
+            </div>
+
+            <div class="zone-footer">
+              <div class="zone-price-preview">
+                <span class="price-from">от</span>
+                <span class="price-amount text-neon">1 000 ₸</span>
+                <span class="price-period">/ час</span>
+              </div>
+              <button class="btn btn-primary btn-glow open-booking-btn" data-zone="VIP зал (15 ПК)">
+                <i class="fa-solid fa-crown"></i> Забронировать VIP
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prices & Packages Section -->
+  <section class="prices-section" id="prices">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-coins"></i> ВЫГОДНЫЕ ТАРИФЫ</span>
+        <h2 class="section-title">ПРАЙС И <span class="neon-text">ПАКЕТЫ</span></h2>
+        <p class="section-desc">Играй час, бери пакет на день или приходи на жаркую ночную сессию по спеццене.</p>
+      </div>
+
+      <!-- Pricing Tab Controls -->
+      <div class="pricing-tabs">
+        <button class="price-tab-btn active" data-tab="tab-common">
+          <i class="fa-solid fa-desktop"></i> Общий зал (40 ПК)
+        </button>
+        <button class="price-tab-btn" data-tab="tab-vip">
+          <i class="fa-solid fa-crown"></i> VIP зал (15 ПК)
+        </button>
+      </div>
+
+      <!-- Tab Content: Common Hall -->
+      <div class="pricing-content active" id="tab-common">
+        <div class="pricing-grid">
+          <div class="price-card">
+            <div class="price-type">Почасовой</div>
+            <div class="price-rate">600 ₸ <span>/ 1 час</span></div>
+            <p class="price-desc">Для быстрых каток после учебы или работы</p>
+            <ul class="price-perks">
+              <li><i class="fa-solid fa-check"></i> Любой свободный ПК из 40 мест</li>
+              <li><i class="fa-solid fa-check"></i> Доступ ко всем играм</li>
+              <li><i class="fa-solid fa-check"></i> Высокоскоростной интернет</li>
+            </ul>
+            <button class="btn btn-outline open-booking-btn" data-zone="Общий зал - 1 час">Выбрать</button>
+          </div>
+
+          <div class="price-card popular">
+            <div class="popular-tag">ХИТ ДНЯ</div>
+            <div class="price-type">Пакет «3 ЧАСА»</div>
+            <div class="price-rate">1 500 ₸ <span>/ 3 часа</span></div>
+            <p class="price-desc">Оптимально для полноценной рейтинговой сессии</p>
+            <ul class="price-perks">
+              <li><i class="fa-solid fa-check"></i> Экономия на каждом часе</li>
+              <li><i class="fa-solid fa-check"></i> Возможность продления</li>
+              <li><i class="fa-solid fa-check"></i> Быстрый заказ напитков к месту</li>
+            </ul>
+            <button class="btn btn-primary btn-glow open-booking-btn" data-zone="Общий зал - Пакет 3 часа">Выбрать</button>
+          </div>
+
+          <div class="price-card">
+            <div class="price-type">Пакет «5 ЧАСОВ»</div>
+            <div class="price-rate">2 300 ₸ <span>/ 5 часов</span></div>
+            <p class="price-desc">Для хардкорных турниров и буткемпа</p>
+            <ul class="price-perks">
+              <li><i class="fa-solid fa-check"></i> Максимальная выгода</li>
+              <li><i class="fa-solid fa-check"></i> Фиксация места за вами</li>
+              <li><i class="fa-solid fa-check"></i> Доступен в любое время дня</li>
+            </ul>
+            <button class="btn btn-outline open-booking-btn" data-zone="Общий зал - Пакет 5 часов">Выбрать</button>
+          </div>
+
+          <div class="price-card night-card">
+            <div class="night-tag"><i class="fa-solid fa-moon"></i> 22:00 - 08:00</div>
+            <div class="price-type">Пакет «НОЧЬ»</div>
+            <div class="price-rate">3 500 ₸ <span>/ вся ночь</span></div>
+            <p class="price-desc">Ночные битвы нон-стоп до самого рассвета</p>
+            <ul class="price-perks">
+              <li><i class="fa-solid fa-check"></i> 10 часов непрерывного гейминга</li>
+              <li><i class="fa-solid fa-check"></i> Киберспортивная атмосфера ночи</li>
+              <li><i class="fa-solid fa-check"></i> Спеццены на комбо-снэки в баре</li>
+            </ul>
+            <button class="btn btn-primary open-booking-btn" data-zone="Общий зал - Пакет Ночь">Забронировать ночь</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content: VIP Hall -->
+      <div class="pricing-content" id="tab-vip">
+        <div class="pricing-grid">
+          <div class="price-card">
+            <div class="price-type">VIP Почасовой</div>
+            <div class="price-rate">1 000 ₸ <span>/ 1 час</span></div>
+            <p class="price-desc">Премиум железка и максимальная концентрация</p>
+            <ul class="price-perks">
+              <li><i class="fa-solid fa-check"></i> 1 из 15 эксклюзивных мест</li>
+              <li><i class="fa-solid fa-check"></i> 240+ Hz монитор и флагманский FPS</li>
+              <li><i class="fa-solid fa-check"></i> Приватная закрытая зона</li>
+            </ul>
+            <button class="btn btn-outline open-booking-btn" data-zone="VIP зал - 1 час">Выбрать</button>
+          </div>
+
+          <div class="price-card popular">
+            <div class="popular-tag">VIP ВЫБОР</div>
+            <div class="price-type">VIP «3 ЧАСА»</div>
+            <div class="price-rate">2 600 ₸ <span>/ 3 часа</span></div>
+            <p class="price-desc">Для уверенного покорения лидербордов</p>
+            <ul class="price-perks">
+              <li><i class="fa-solid fa-check"></i> Комфорт высшего уровня</li>
+              <li><i class="fa-solid fa-check"></i> Эргономичные Pro-кресла</li>
+              <li><i class="fa-solid fa-check"></i> Персональное обслуживание бара</li>
+            </ul>
+            <button class="btn btn-primary btn-glow open-booking-btn" data-zone="VIP зал - Пакет 3 часа">Выбрать</button>
+          </div>
+
+          <div class="price-card">
+            <div class="price-type">VIP «5 ЧАСОВ»</div>
+            <div class="price-rate">4 200 ₸ <span>/ 5 часов</span></div>
+            <p class="price-desc">Для командных тренировок и клан-варов</p>
+            <ul class="price-perks">
+              <li><i class="fa-solid fa-check"></i> Бронирование нескольких ПК рядом</li>
+              <li><i class="fa-solid fa-check"></i> Сверхнизкий пинг без задержек</li>
+              <li><i class="fa-solid fa-check"></i> Премиум наушники с шумоподавлением</li>
+            </ul>
+            <button class="btn btn-outline open-booking-btn" data-zone="VIP зал - Пакет 5 часов">Выбрать</button>
+          </div>
+
+          <div class="price-card night-card">
+            <div class="night-tag"><i class="fa-solid fa-moon"></i> 22:00 - 08:00</div>
+            <div class="price-type">VIP «НОЧЬ»</div>
+            <div class="price-rate">5 500 ₸ <span>/ вся ночь</span></div>
+            <p class="price-desc">Царский ночной марафон в приватном зале</p>
+            <ul class="price-perks">
+              <li><i class="fa-solid fa-check"></i> 10 часов бескомпромиссного кайфа</li>
+              <li><i class="fa-solid fa-check"></i> Полная тишина и концентрация</li>
+              <li><i class="fa-solid fa-check"></i> Лучшие девайсы клуба</li>
+            </ul>
+            <button class="btn btn-primary open-booking-btn" data-zone="VIP зал - Пакет Ночь">Забронировать ночь</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Games Grid -->
+  <section class="games-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-gamepad"></i> БИБЛИОТЕКА ИГР</span>
+        <h2 class="section-title">ВСЕ ХИТЫ <span class="neon-text">УЖЕ УСТАНОВЛЕНЫ</span></h2>
+        <p class="section-desc">Быстрый запуск, последние патчи и готовые аккаунты к любимым играм.</p>
+      </div>
+
+      <div class="games-carousel">
+        <div class="game-pill"><i class="fa-solid fa-crosshairs"></i> Counter-Strike 2</div>
+        <div class="game-pill"><i class="fa-solid fa-shield-halved"></i> Dota 2</div>
+        <div class="game-pill"><i class="fa-solid fa-gun"></i> Valorant</div>
+        <div class="game-pill"><i class="fa-solid fa-car"></i> GTA V / RP</div>
+        <div class="game-pill"><i class="fa-solid fa-person-rifle"></i> PUBG: Battlegrounds</div>
+        <div class="game-pill"><i class="fa-solid fa-cubes"></i> Minecraft</div>
+        <div class="game-pill"><i class="fa-solid fa-jet-fighter"></i> War Thunder</div>
+        <div class="game-pill"><i class="fa-solid fa-skull"></i> Apex Legends</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts & Map Section -->
+  <section class="contacts-section" id="contacts">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-map-location-dot"></i> ЛОКАЦИЯ И СВЯЗЬ</span>
+        <h2 class="section-title">КАК НАС <span class="neon-text">НАЙТИ</span></h2>
+        <p class="section-desc">Ждём вас в любое время дня и ночи в самом сердце города Иссык!</p>
+      </div>
+
+      <div class="contacts-layout">
+        <!-- Contact Info Box -->
+        <div class="contact-info-card">
+          <div class="contact-card-header">
+            <img src="assets/logo.jpg" alt="Rampage Issyk Logo" class="contact-logo">
+            <div>
+              <h3>Клуб RAMPAGE</h3>
+              <p class="online-status"><span class="pulse-dot-green"></span> Открыто прямо сейчас 24/7</p>
+            </div>
+          </div>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="c-text">
+                <span class="c-title">Адрес клуба</span>
+                <span class="c-val">г. Иссык, ул. Алтын-адам 113/6</span>
+                <span class="c-note">Удобная парковка рядом со входом</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="c-icon"><i class="fa-solid fa-clock"></i></div>
+              <div class="c-text">
+                <span class="c-title">Режим работы</span>
+                <span class="c-val">Круглосуточно • 24/7</span>
+                <span class="c-note">Без перерывов, праздников и выходных</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="c-icon"><i class="fa-brands fa-instagram"></i></div>
+              <div class="c-text">
+                <span class="c-title">Наш Instagram</span>
+                <a href="https://instagram.com/rampage_issyk" target="_blank" rel="noopener noreferrer" class="c-link">
+                  @rampage_issyk
+                </a>
+                <span class="c-note">Анонсы турниров, розыгрыши и новости</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="contact-actions">
+            <a href="https://instagram.com/rampage_issyk" target="_blank" rel="noopener noreferrer" class="btn btn-insta">
+              <i class="fa-brands fa-instagram"></i> Написать в Instagram
+            </a>
+            <a href="tel:+77000000000" class="btn btn-primary btn-glow">
+              <i class="fa-solid fa-phone"></i> Позвонить в клуб
+            </a>
+          </div>
+
+          <div class="nav-app-buttons">
+            <a href="https://2gis.kz" target="_blank" rel="noopener" class="nav-chip">
+              <i class="fa-solid fa-diamond-turn-right"></i> Открыть в 2GIS
+            </a>
+            <a href="https://yandex.kz/maps" target="_blank" rel="noopener" class="nav-chip">
+              <i class="fa-solid fa-map"></i> Яндекс.Карты
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Map Frame -->
+        <div class="map-wrapper">
+          <div class="map-card">
+            <div class="map-header-bar">
+              <div class="map-dots"><span></span><span></span><span></span></div>
+              <span class="map-bar-title"><i class="fa-solid fa-location-crosshairs"></i> Иссык, Алтын-адам 113/6</span>
+            </div>
+            
+            <div class="map-container">
+              <!-- OpenStreetMap iframe centered around Issyk, Kazakhstan -->
+              <iframe 
+                title="Карта расположения Rampage Issyk"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=77.4400%2C43.3400%2C77.4900%2C43.3800&amp;layer=mapnik&amp;marker=43.3585%2C77.4642"
+                loading="lazy">
+              </iframe>
+              <div class="map-pin-overlay">
+                <div class="map-radar"></div>
+                <div class="map-pin-card">
+                  <img src="assets/logo.jpg" alt="Rampage" class="pin-thumb">
+                  <div>
+                    <strong>RAMPAGE 24/7</strong>
+                    <p>ул. Алтын-адам 113/6</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="map-footer-note">
+              <span><i class="fa-solid fa-circle-info"></i> Ориентир: ул. Алтын-адам, удобный заезд и парковка для гостей.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-content">
+          <h2>ГОТОВ К ПОБЕДНОЙ КАТКЕ?</h2>
+          <p>Забронируй свой ПК заранее, собирай стак и занимай лучшие места в Общем или VIP зале прямо сейчас!</p>
+        </div>
+        <div class="cta-btn-wrap">
+          <button class="btn btn-primary btn-large btn-glow open-booking-btn" data-zone="Любой">
+            <i class="fa-solid fa-fire"></i> Забронировать сейчас
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <img src="assets/logo.jpg" alt="Rampage Issyk Logo" class="brand-logo">
+          <div>
+            <span class="brand-title">RAMPAGE</span>
+            <span class="brand-tag">CYBER CLUB ISSYK</span>
+          </div>
+        </div>
+        <p class="footer-desc">
+          Компьютерный клуб #1 в городе Иссык. Киберспорт, топовое железо, 40 ПК в общем зале и 15 ПК в VIP. Круглосуточный комфорт для каждого игрока.
+        </p>
+        <div class="footer-socials">
+          <a href="https://instagram.com/rampage_issyk" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/77000000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="tel:+77000000000" aria-label="Phone">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Навигация</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Главная</a></li>
+          <li><a href="#about">О клубе</a></li>
+          <li><a href="#zones">Зоны клуба (Общий / VIP)</a></li>
+          <li><a href="#prices">Прайс-лист и тарифы</a></li>
+          <li><a href="#contacts">Контакты и карта</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Клубная информация</h4>
+        <ul class="footer-contacts">
+          <li><i class="fa-solid fa-location-dot"></i> г. Иссык, ул. Алтын-адам 113/6</li>
+          <li><i class="fa-solid fa-clock"></i> Работаем 24/7 без выходных</li>
+          <li><i class="fa-solid fa-desktop"></i> 55 мощных компьютеров</li>
+          <li><i class="fa-brands fa-instagram"></i> @rampage_issyk</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright">© 2026 Rampage Issyk 24/7. Все права защищены.</p>
+        <p class="credits">Made for Gamers & Esports Enthusiasts</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Booking Window -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-window">
+      <button class="modal-close" id="closeModal" aria-label="Закрыть">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-header">
+        <div class="modal-icon"><i class="fa-solid fa-headset"></i></div>
+        <h3>БРОНИРОВАНИЕ ПК В RAMPAGE</h3>
+        <p>Заполните форму, и мы оперативно закрепим за вами топовое место!</p>
+      </div>
+
+      <form id="bookingForm" class="booking-form">
+        <div class="form-group">
+          <label for="clientName"><i class="fa-solid fa-user"></i> Ваше имя</label>
+          <input type="text" id="clientName" placeholder="Например, Арман" required>
+        </div>
+
+        <div class="form-group">
+          <label for="clientPhone"><i class="fa-solid fa-phone"></i> Номер телефона</label>
+          <input type="tel" id="clientPhone" placeholder="+7 (___) ___-__-__" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="zoneSelect"><i class="fa-solid fa-desktop"></i> Игровая зона</label>
+            <select id="zoneSelect">
+              <option value="Общий зал (40 ПК)">Общий зал (40 ПК) — 600 ₸/час</option>
+              <option value="VIP зал (15 ПК)">VIP зал (15 ПК) — 1000 ₸/час</option>
+              <option value="Пакет Ночь (Общий)">Пакет «Ночь» Общий — 3500 ₸</option>
+              <option value="Пакет Ночь (VIP)">Пакет «Ночь» VIP — 5500 ₸</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="pcCount"><i class="fa-solid fa-users"></i> Количество ПК</label>
+            <select id="pcCount">
+              <option value="1 ПК">1 компьютер</option>
+              <option value="2 ПК">2 компьютера (вдвоем)</option>
+              <option value="3 ПК">3 компьютера</option>
+              <option value="5 ПК (Команда)">5 компьютеров (Full Team)</option>
+              <option value="Более 5 ПК">Более 5 ПК</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bookingDate"><i class="fa-solid fa-calendar-days"></i> Дата</label>
+            <input type="date" id="bookingDate" required>
+          </div>
+
+          <div class="form-group">
+            <label for="bookingTime"><i class="fa-solid fa-clock"></i> Время прибытия</label>
+            <input type="time" id="bookingTime" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="clientNotes"><i class="fa-solid fa-comment-dots"></i> Пожелания к брони (необязательно)</label>
+          <textarea id="clientNotes" rows="2" placeholder="Например: посадить рядом с розеткой, любим CS2..."></textarea>
+        </div>
+
+        <div class="modal-submit-actions">
+          <button type="submit" class="btn btn-primary btn-large btn-glow btn-block">
+            <i class="fa-solid fa-paper-plane"></i> Отправить бронь в WhatsApp
+          </button>
+          <a href="tel:+77000000000" class="btn btn-secondary btn-block">
+            <i class="fa-solid fa-phone"></i> Позвонить администратору
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast">
+    <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <div class="toast-body">
+      <div class="toast-title">Заявка принята!</div>
+      <div class="toast-message">Администратор свяжется с вами для подтверждения.</div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
