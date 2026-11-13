@@ -1,0 +1,4 @@
+*.dev.*
+minify.py
+.DS_Store
+Thumbs.db
